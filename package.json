@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "npm packages for friend finder",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobyb87/FriendFinder.git"
+  },
+  "author": "Toby Boyd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobyb87/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/tobyb87/FriendFinder#readme"
+}
