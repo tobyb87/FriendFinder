@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<title>FriendFinder</title>
 
-	<!-- Latest compiled and minified CSS & JS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
 	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	<!-- Font Awesome Glyphicons -->
+	<!-- Fonts -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 	<!-- Chosen -->
@@ -158,7 +158,7 @@
 		<hr>
 	    <footer class="footer">
 	      <div class="container">
-		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/tobyb87/FriendFinder">GitHub Repo</a></p>
 	      </div>
 	    </footer>
 
@@ -187,70 +187,7 @@
 	</div>
 
   <script type="text/javascript">
-  	// // Chosen CSS
-    // var config = {
-    //   '.chosen-select'           : {},
-    //   '.chosen-select-deselect'  : {allow_single_deselect:true},
-    //   '.chosen-select-no-single' : {disable_search_threshold:10},
-    //   '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-    //   '.chosen-select-width'     : {width:"95%"}
-    // }
-    // for (var selector in config) {
-    //   $(selector).chosen(config[selector]);
-    // }
-		//
-    // // Capture the form inputs
-    // $("#submit").on("click", function(){
-		//
-    // 	// Form validation
-    // 	function validateForm() {
-		//   var isValid = true;
-		//   $('.form-control').each(function() {
-		//     if ( $(this).val() === '' )
-		//         isValid = false;
-		//   });
-		//
-		//   $('.chosen-select').each(function() {
-		//
-		//   	if( $(this).val() === "")
-		//   		isValid = false
-		//   })
-		//   return isValid;
-		// }
-		//
-		// // If all required fields are filled
-		// if (validateForm() == true)
-		// {
-		// 	// Create an object for the user's data
-	  //   	var userData = {
-	  //   		name: $("#name").val(),
-	  //   		photo: $("#photo").val(),
-	  //   		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
-	  //   	}
-		//
-		//
-	  //   	// Grab the URL of the website
-	  //   	var currentURL = window.location.origin;
-		//
-	  //   	// AJAX post the data to the friends API.
-	  //   	$.post(currentURL + "/api/friends", userData, function(data){
-		//
-	  //   		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
-	  //   		$("#matchName").text(data.name);
-	  //   		$('#matchImg').attr("src", data.photo);
-		//
-		//     	// Show the modal with the best match
-		//     	$("#resultsModal").modal('toggle');
-		//
-	  //   	});
-		// }
-		// else
-		// {
-		// 	alert("Please fill out all fields before submitting!");
-		// }
-		//
-    // 	return false;
-    // });
+
 $("#submit").on("click", function(e){
 	e.preventDefault();
 	var answersArray = [];
@@ -260,21 +197,10 @@ answersArray.push($('#photo').val());
 for (var i=1; i<10; i++) {
 	answersArray.push($("#q"+i).val());
 }
-	// console.log("Answer 1: " + $("#q1").val());
-	// console.log("Answer 2: " + $("#q2").val());
-	// console.log("Answer 3: " + $("#q3").val());
-	// console.log("Answer 4: " + $("#q4").val());
-	// console.log("Answer 5: " + $("#q5").val());
-	// console.log("Answer 6: " + $("#q6").val());
-	// console.log("Answer 7: " + $("#q7").val());
-	// console.log("Answer 8: " + $("#q8").val());
-	// console.log("Answer 9: " + $("#q9").val());
-	// console.log("Answer 10: " + $("#q10").val());
+	
 	console.log(answersArray);
 })
   </script>
 
 </body>
 </html>
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
