@@ -16,7 +16,7 @@ var friends = [{
    ]
 }, {
   "routeName": "caleb",
-  "name":"Matt",
+  "name":"Caleb",
   "photo":"https://media.xogrp.com/images/28534aa3-0b46-467a-bbde-d42261a9bfe2~rt_auto-rs_325.h",
   "scores":[
      3,
